@@ -20,7 +20,7 @@ onMounted(async () => {
    try {
     const response = await axios.get(`${api}/api/bitcoin`);
     console.log("Data received:", response.data);
-    stats.value = response.data
+    stats.value = response.data.content.sort((a, b) => new Date(a.date) - new Date(b.date));
     console.log("content:", stats.value)
     if (Array.isArray(stats.value)) {
     dates.value = stats.value.map(entry => new Date(entry.date));
