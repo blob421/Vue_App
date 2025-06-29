@@ -60,7 +60,7 @@ export default {
 <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(145deg, #afcae5, #f7f7f7);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -68,10 +68,10 @@ export default {
             margin: 0;
         }
         .registration-container {
-            background-color: white;
+            background: linear-gradient(145deg, #afcae5, #f7f7f7);
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgb(247, 247, 247);
             text-align: center;
             position: absolute;
             top: 50%;
@@ -82,11 +82,11 @@ export default {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #fefefe;
             border-radius: 5px;
         }
         button {
-            background-color: #007bff;
+            background-color: #9b9c93;
             color: white;
             padding: 10px;
             border: none;
@@ -94,7 +94,7 @@ export default {
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #646c70;
         }
    
 </style>

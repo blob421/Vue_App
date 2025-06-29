@@ -42,7 +42,7 @@
         }
         .sidebar {
             width: 250px;
-            background: #2C3E50;
+            background: #808182;
             color: white;
             height: 100vh;
             padding: 20px;
@@ -67,7 +67,7 @@
             background: #ECF0F1;
         }
         .header {
-            background: #2980B9;
+            background: #9db0bd;
             color: white;
             padding: 15px;
             text-align: center;

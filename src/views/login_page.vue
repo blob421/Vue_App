@@ -57,19 +57,19 @@ export default {
 <style>
 body {
             font-family: Arial,bold , sans-serif;
-            color:rgba(156, 177, 181, 0.911);
+            background: linear-gradient(145deg, #afcae5, #f7f7f7);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-           
+            aspect-ratio: 7 / 4;
 }
 .login-container {
-            background-color: hsla(0, 100%, 99%, 0.765);
+            background: linear-gradient(145deg, #afcae5, #f7f7f7);
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(119, 36, 8, 0.878);
+            box-shadow: 0 0 10px rgb(247, 247, 247);
             text-align: center;
             position: absolute;
             top: 50%;
@@ -80,11 +80,11 @@ input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #fefefe;
             border-radius: 5px;
         }
 button {
-            background-color: #70ccfa;
+            background-color: #9b9c93;
             color: white;
             padding: 10px;
             border: none;
@@ -92,10 +92,6 @@ button {
             cursor: pointer;
         }
 button:hover {
-            background-color: #3e91c9;
-        
-
-
-
-      }
+            background-color: #646c70;
+            }
 </style>

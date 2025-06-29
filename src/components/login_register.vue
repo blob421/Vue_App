@@ -15,16 +15,18 @@
 
 
 
-.login{position:fixed;
-      
-       left:51%;
-       top:94%;
-       z-index: 1000;
-        transform: translate(-50%, -50%);
-       display: flex;
-     
+.login{
+    
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-family:fantasy;
+    top:94%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    display: flex;  
 }
-
 
 
 
