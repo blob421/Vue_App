@@ -1,5 +1,6 @@
 <template>
-  <div ref="plotlyChart" style="height: 400px; width: 700px;"></div>
+  <div class="graph-container"></div>
+    <div ref="plotlyChart" class="graph"></div>
 </template>
 
 <script setup>
@@ -103,3 +104,47 @@ const renderPlot = () => {
     }
   
 </script>
+
+<style>
+.graph {
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+  position: relative;
+  aspect-ratio: 7 / 4;
+  
+  
+}
+.graph-container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Viewport height ensures max space */
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+ 
+}
+
+@media (min-width: 1023px) {
+  .graph {
+   top: 4vw;
+   right: 15vw;
+   position: relative;
+  }
+}
+
+@media (max-width: 1023px) {
+  .graph {
+  top: 10vw;
+  aspect-ratio: 9 / 6;
+   position:relative;
+  
+  }
+
+}
+
+</style>
