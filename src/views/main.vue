@@ -63,7 +63,7 @@ watch([dates, prices], ([newDates, newPrices]) => {
 <style>
  
  .graph{position:absolute;
-       right: 11.3vw;
+       right: 17.5vw;
        top: 11vw;
       
 
@@ -90,7 +90,7 @@ watch([dates, prices], ([newDates, newPrices]) => {
      
      position: absolute;
      top: 2vw;
-     left: 31vw;
+     left: 31.2vw;
      display:flex;
      font-size: 35px;
      

@@ -1,5 +1,5 @@
 <template>
-  <div ref="plotlyChart" style="height: 450px; width: 800px;"></div>
+  <div ref="plotlyChart" style="height: 400px; width: 700px;"></div>
 </template>
 
 <script setup>
