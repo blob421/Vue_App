@@ -7,10 +7,10 @@ import { ref, onMounted, watch } from "vue";
 import axios from "axios";
 
 
-const api = import.meta.env.VITE_API_URL
+const api = import.meta.env.VITE_API_URL;
 const stats = ref([]);
 const dates = ref([]);
-const prices = ref([])
+const prices = ref([]);
 const filteredDates = ref([]);
 const filteredPrices = ref([]);
 
