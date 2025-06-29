@@ -21,7 +21,7 @@
   transform: translateX(-50%);
  display: inline-block;
   padding: 0.6rem 1.4rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   background: linear-gradient(145deg, #cde5ed, #f0f6f8);
   color: #adafb0;
