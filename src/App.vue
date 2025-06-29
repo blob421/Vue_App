@@ -15,28 +15,3 @@ import login from '@/components/login_register.vue'
   
 </template>
 
-<style>
-
-   .container{
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    
-}
-
-    .links {
-    position:fixed;
-    bottom:0vw;
-    left:47.8vw;
-    z-index: 1000;
-    
-
-}
- .div{
-  
-    width: 100%;
-  height: 100vh;
-
- }
-
-</style>

@@ -20,7 +20,7 @@ onMounted(async () => {
    try {
     const response = await axios.get(`${api}/api/bitcoin`);
     console.log("Data received:", response.data);
-    stats.value = response.data.content.sort((a, b) => new Date(a.date) - new Date(b.date));
+    stats.value = response.data
     console.log("content:", stats.value)
     if (Array.isArray(stats.value)) {
     dates.value = stats.value.map(entry => new Date(entry.date));
@@ -50,13 +50,19 @@ watch([dates, prices], ([newDates, newPrices]) => {
 </script>
 
 <template>
-   <Heading class="title"/>
+   <head>
+    <h1>Welcome @!</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    
+   </head>
+     
+     <Heading />
       <graph :dates="filteredDates" :prices="filteredPrices" class="graph"/>
        
 
     <RouterView />
 
 </template>
+
+
 

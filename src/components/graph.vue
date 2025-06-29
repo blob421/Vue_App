@@ -1,5 +1,8 @@
 <template>
-  <div class="graph-container"></div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
     <div ref="plotlyChart" class="graph"></div>
 </template>
 
@@ -32,7 +35,8 @@ const renderPlot = () => {
   }
       };
 
-      const layout = {
+      const layout = { 
+
     title: {
       text: "Bitcoin movement",  'x': 0.505, 
         'y':0.89, font : { size: 18, color: "#ffffff", family: "solidity: 0.2" }
@@ -100,51 +104,25 @@ const renderPlot = () => {
 ];
 
      
-      Plotly.newPlot(plotlyChart.value, [trace], layout, plotData);
+      Plotly.newPlot(plotlyChart.value, [trace], layout);
+
     }
   
 </script>
 
 <style>
+
 .graph {
-  max-width: 100%;
-  max-height: 100%;
+
+
+  top:10vw;
+  width: 80vw;             
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
   box-sizing: border-box;
-  transform-origin: center center;
-  transition: transform 0.3s ease;
-  position: relative;
-  aspect-ratio: 7 / 4;
+}
   
-  
-}
-.graph-container {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%; /* Viewport height ensures max space */
-  overflow: hidden;
-  position: relative;
-  box-sizing: border-box;
- 
-}
-
-@media (min-width: 1023px) {
-  .graph {
-   top: 4vw;
-   right: 15vw;
-   position: relative;
-  }
-}
-
-@media (max-width: 1023px) {
-  .graph {
-  top: 10vw;
-  aspect-ratio: 9 / 6;
-   position:relative;
-  
-  }
-
-}
 
 </style>
