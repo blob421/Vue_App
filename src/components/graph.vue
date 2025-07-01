@@ -35,7 +35,11 @@ const renderPlot = () => {
   }
       };
 
-      const layout = { 
+      const layout = { margin: {
+ 
+  r: 55, 
+ 
+},
 
     title: {
       text: "Bitcoin movement",  'x': 0.505, 
@@ -102,9 +106,9 @@ const renderPlot = () => {
     }
   }
 ];
-
+   const config = {responsive: true};
      
-      Plotly.newPlot(plotlyChart.value, [trace], layout);
+      Plotly.newPlot(plotlyChart.value, [trace], layout, config);
 
     }
   
@@ -112,17 +116,29 @@ const renderPlot = () => {
 
 <style>
 
-.graph {
-
-
+@media (min-width: 1024px) {
+  .graph {
   top:10vw;
-  width: 80vw;             
+       
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -30%);
   box-sizing: border-box;
-}
+  width: 80vw;
   
+  }  
+}
+@media (max-width: 1023px) {
+  .graph {
+   position: absolute;
+    top: 25%;
+     left: 0%;
 
+   width: 100vw;
+   aspect-ratio: 7/5;
+ 
+   box-sizing: border-box;
+  }  
+}
 </style>
