@@ -126,7 +126,7 @@ const renderPlot = () => {
   transform: translate(-50%, -30%);
   box-sizing: border-box;
   width: 80vw;
-  
+   opacity: 0.91;
   }  
 }
 @media (max-width: 1023px) {
@@ -136,8 +136,8 @@ const renderPlot = () => {
      left: 0%;
 
    width: 100vw;
-   aspect-ratio: 7/5;
- 
+   aspect-ratio: 14/11;
+    opacity: 0.9;
    box-sizing: border-box;
   }  
 }
