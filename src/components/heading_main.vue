@@ -3,6 +3,7 @@
 
 <template>
   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <h1 class="title-container">Welcome to my web app</h1>
   
@@ -31,6 +32,8 @@
   text-shadow: 1px 1px 1px white;
   backdrop-filter: blur(2px);
   transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(2px); /* ✅ Safari support */
+  backdrop-filter: blur(2px); 
 }
 
 

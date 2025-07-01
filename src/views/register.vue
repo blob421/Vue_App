@@ -1,7 +1,10 @@
 
 <template>
-
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+ </head>
     <div class="registration-container">
         <h2>Register</h2>
         <form @submit.prevent="register">
