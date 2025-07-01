@@ -19,7 +19,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   background: linear-gradient(145deg, #cde5ed, #f0f6f8);
-  color: #adafb0;
+  color: #959696;
   border-radius: 12px;
   border: 2px solid #ffffff;
   box-shadow: 
