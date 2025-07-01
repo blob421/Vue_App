@@ -1,5 +1,5 @@
 ![Alt text](https://i.imgur.com/kvzX3Fm.png)
-![Alt text](https://i.imgur.com/lFr5sDc.png)
+![Alt text](https://i.imgur.com/fSe31xu.png)
 
 Website URL:
 ------------
