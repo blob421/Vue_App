@@ -20,8 +20,8 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 16px;
-    font-family:fantasy;
+    font-size: 17px;
+    font-family: "Passion One", sans-serif;
     top:94%;
     z-index: 1000;
     transform: translate(-50%, -50%);
