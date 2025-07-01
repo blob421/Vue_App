@@ -50,12 +50,7 @@ watch([dates, prices], ([newDates, newPrices]) => {
 </script>
 
 <template>
-   <head>
-    <h1>Welcome @!</h1>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   </head>
-     
+ 
      <Heading />
       <graph :dates="filteredDates" :prices="filteredPrices" class="graph"/>
        
