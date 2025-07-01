@@ -40,5 +40,12 @@
   }
 
 }
+@media (max-width: 414px) {
+  .title-container {
+  font-size: 20px;
+  
+  }
+
+}
 </style>
 

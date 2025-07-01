@@ -20,11 +20,11 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 17px;
+    font-size: 18px;
     font-family: "Passion One", sans-serif;
-    top:94%;
+    top:90%;
     z-index: 1000;
-    transform: translate(-50%, -50%);
+   
     display: flex;  
 }
 

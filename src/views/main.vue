@@ -65,3 +65,9 @@ watch([dates, prices], ([newDates, newPrices]) => {
 
 
 
+<style>
+body{
+   background: linear-gradient(145deg, #afcae5, #f7f7f7);
+
+}
+</style>
