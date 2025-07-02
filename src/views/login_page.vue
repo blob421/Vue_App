@@ -43,6 +43,7 @@ export default {
         localStorage.setItem("jwtToken", response.data.access_token);
       
         alert('Login successful!');
+        window.location.href = '/dashboard/home'
       } catch (error) {
         this.errorMessage = 'Invalid credentials. Please try again.';
        

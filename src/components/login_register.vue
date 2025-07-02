@@ -4,7 +4,7 @@
       <a href="/login/sign-in">Login</a> |
       <a href="/">Home</a> |
       <a href="/login/register">Register</a> |
-      <a href="/dashboard/home">Dashboard</a>
+      <a v-if= "isAuthenticated" href="/dashboard/home">Dashboard</a> 
 
  </head>
  
@@ -33,5 +33,11 @@
 </style>
 
 <script>
-
+export default {
+     computed : {
+          isAuthenticated() {
+               return !!localStorage.getItem("jwtToken");
+          }
+     }
+}
 </script>
