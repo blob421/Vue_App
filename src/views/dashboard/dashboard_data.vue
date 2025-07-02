@@ -200,6 +200,59 @@
             color: white;
         }
     }
+      @media (max-height:414px){
+
+        .sidebar {
+            width: 100%;
+            background: #75797c;
+            color: white;
+            padding: 5px;
+            top:1vw;
+            text-align: center;
+            height: 15vw;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.203);
+              font-size: 15px;
+         
+          
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            background: #859fbf62;
+        }
+    
+        .header {
+            background: #9db0bd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .card {
+            background: white;
+            padding: 1px;
+            margin: 28px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.203);
+            width: auto;
+            text-align: center;
+            color: #808182;
+            height: auto;
+        }
+               
+        .dash{
+            color: white;
+        }
+}
+    
 </style>
 
 <script>

@@ -47,5 +47,11 @@
   }
 
 }
+@media (max-height:500px){
+  .title-container{
+    font-size: 16px;
+  }
+}
+
 </style>
 
