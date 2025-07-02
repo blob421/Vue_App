@@ -19,10 +19,10 @@ Fully compatible with mobiles :heavy_check_mark:
 Cool UI :heavy_check_mark: 
 
 What's next to come :
----------------------
-1. An LSTM prediction model for Bitcoin and maybe Ethereum 
-2. An integration of this model to the current plotly graph 
-3. A way to leave comments as users 
+----------------------
+ - An LSTM prediction model for Bitcoin and maybe Ethereum 
+ - An integration of this model to the current plotly graph 
+ - A way to leave comments as users 
 
 
 
