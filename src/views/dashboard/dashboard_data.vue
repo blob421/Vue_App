@@ -38,13 +38,13 @@
 
 @media (min-width: 1024px){
   body {
-            font-family: "Passion One", sans-serif;
+              font-family: "Passion One", sans-serif;
             background: linear-gradient(145deg, #afcae5, #f7f7f7);
-            width: 100%;
+            width: 93.3vw;
             display:inline;
-            position: absolute;
-            left: 50%;
-  transform: translateX(-50%);
+            height: 200%;
+         
+         
    
         }
 
@@ -81,6 +81,7 @@
             padding: 15px;
             text-align: center;
             font-size: 20px;
+          
         }
         .card {
             background: white;
@@ -99,15 +100,17 @@
 
 @media (max-width:1023px) {
         body {
-            font-family: "Passion One", sans-serif;
+             font-family: "Passion One", sans-serif;
             font-size: 25px;
-         
+             text-align: center;
   
             background: linear-gradient(145deg, #afcae5, #f7f7f7);
-            text-align: center;
-            position: absolute;
-            left: 50%;
-  transform: translateX(-50%);
+                      text-align: center;
+               position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+        
         }
         .sidebar {
            
@@ -132,7 +135,13 @@
             background: #34495E;
         }
      
-        
+        .header {
+            background: #9db0bd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
     
         .card {
             background: white;
@@ -140,7 +149,7 @@
             margin: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
             height:10vh;
-            font-size: 20px;
+            font-size: 30px;
             color: #808182;
            
         }
@@ -156,10 +165,13 @@
             font-size: 15px;
   
             background: linear-gradient(145deg, #afcae5, #f7f7f7);
-                 text-align: center;
-                position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        
+        
         }
         .sidebar {
            
@@ -184,7 +196,13 @@
             background: #34495E;
         }
      
-        
+        .header {
+            background: #9db0bd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
     
         .card {
             background: white;
@@ -192,8 +210,11 @@
             margin: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
             height:10vh;
-            font-size: 13px;
-             color: #808182; 
+            font-size: 14px;
+            color: #808182;
+      
+           
+            
          
         }
         
@@ -202,7 +223,6 @@
         }
     }
 </style>
-
 
 <script>
 import axios from 'axios';
