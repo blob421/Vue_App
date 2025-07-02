@@ -97,7 +97,7 @@ body {
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            width: 100vw;
             aspect-ratio: 7 / 4;
 }
 .login-container {

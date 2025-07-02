@@ -10,8 +10,8 @@
     <div class="sidebar">
       <h2>Dashboard</h2>
         <ul>
-            <li><router-link to ="/dashboard/home" class="dash">Home</router-link></li>
-            <li><router-link to ="/dashboard/data" class="dash">User Data</router-link></li>
+            <li><a href="/dashboard/home" class="dash">Home</a></li>
+            <li><a href ="/dashboard/data" class="dash">User Data</a></li>
          
         </ul>
     </div>
@@ -24,7 +24,7 @@
           
         <div class="card">
             <h3>Password:</h3>
-            <p><router-link to= "/update_password">Change password</router-link></p>
+            <p><a href= "/update_password">Change password</a></p>
         </div>
         <div class="card">
             <h3>Email address:</h3>
@@ -38,12 +38,11 @@
 
 @media (min-width: 1024px){
   body {
-              font-family: "Passion One", sans-serif;
+            font-family: "Passion One", sans-serif;
             background: linear-gradient(145deg, #afcae5, #f7f7f7);
             width: 93.3vw;
             display:inline;
             height: 200%;
-         
          
    
         }
@@ -81,7 +80,6 @@
             padding: 15px;
             text-align: center;
             font-size: 20px;
-          
         }
         .card {
             background: white;
@@ -101,22 +99,18 @@
 @media (max-width:1023px) {
         body {
              font-family: "Passion One", sans-serif;
-            font-size: 25px;
-             text-align: center;
-  
             background: linear-gradient(145deg, #afcae5, #f7f7f7);
-                      text-align: center;
-               position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-        
+            width: 93vw;
+            display:inline;
+            height: 200%;
+         
         }
         .sidebar {
-           
+            font-size: 30px;
+            text-align: center;
             background: #808182;
             color: white;
-            width: 90vw;
+            width: 100%;
             padding: 10px;
             opacity: 70%;
             top:1vw;
@@ -135,22 +129,16 @@
             background: #34495E;
         }
      
-        .header {
-            background: #9db0bd;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 20px;
-        }
+        
     
         .card {
+            text-align: center;
             background: white;
             padding: 10px;
             margin: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
             height:10vh;
-            font-size: 30px;
-            color: #808182;
+            font-size: 27px;
            
         }
         
@@ -161,23 +149,20 @@
 
 @media (max-width:700px){
         body {
-            font-family: "Passion One", sans-serif;
-            font-size: 15px;
-  
+             font-family: "Passion One", sans-serif;
             background: linear-gradient(145deg, #afcae5, #f7f7f7);
-            text-align: center;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        
-        
+            width: 93vw;
+            display:inline;
+            height: 200%;
+            
+         
         }
         .sidebar {
-           
+            font-size: 18px;
+           text-align: center;
             background: #808182;
             color: white;
-            width: 90vw;
+            width: 100%;
             padding: 10px;
             opacity: 70%;
             top:1vw;
@@ -196,22 +181,16 @@
             background: #34495E;
         }
      
-        .header {
-            background: #9db0bd;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 20px;
-        }
+        
     
         .card {
+            text-align: center;
             background: white;
             padding: 10px;
             margin: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
             height:10vh;
-            font-size: 14px;
-            color: #808182;
+            font-size: 17px;
       
            
             
@@ -226,7 +205,7 @@
 
 <script>
 import axios from 'axios';
-import { RouterLink, RouterView } from 'vue-router'
+
 const api = import.meta.env.VITE_API_URL;
 
 export default {
