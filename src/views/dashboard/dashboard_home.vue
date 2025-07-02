@@ -33,13 +33,15 @@
 
 @media (min-width: 1024px){
   body {
-           font-family: "Passion One", sans-serif;
-            background: linear-gradient(145deg, #afcae5, #f7f7f7);
-            width: 93vw;
-            display:inline;
-            height: 200%;
-         
-        }
+  font-family: "Passion One", sans-serif;
+  background: linear-gradient(145deg, #afcae5, #f7f7f7);
+  width: 100%;
+  display: inline;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
         .sidebar {
             width: 50vw;
@@ -138,7 +140,7 @@
             padding: 10px;
             margin: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
-            height:10vh;
+            height:auto;
             font-size: 25px;
             text-align: center;
             color: #808182;
