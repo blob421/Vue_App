@@ -24,8 +24,8 @@
     font-family: "Passion One", sans-serif;
     top:90%;
     z-index: 1000;
-   
-    display: flex;  
+    white-space: nowrap;
+    display: inline;
 }
 
 

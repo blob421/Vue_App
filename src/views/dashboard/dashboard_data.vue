@@ -35,25 +35,93 @@
 
 
 <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
+
+@media (min-width: 1024px){
+  body {
+            font-family: "Passion One", sans-serif;
             background: linear-gradient(145deg, #afcae5, #f7f7f7);
+            width: 100%;
+            display:inline;
+            position: absolute;
+            left: 50%;
+  transform: translateX(-50%);
+   
         }
+
         .sidebar {
-            width: 250px;
-            background: #808182;
+            width: 50vw;
+            background: #75797c;
             color: white;
-            height: 100vh;
-            padding: 20px;
+            padding: 5px;
+            top:1vw;
+            text-align: center;
+            height: 13vw;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.203);
+         
+          
         }
         .sidebar h2 {
             text-align: center;
         }
         .sidebar ul {
             list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            background: #859fbf62;
+        }
+    
+        .header {
+            background: #9db0bd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .card {
+            background: white;
+            padding: 10px;
+            margin: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.203);
+            width: 50%;
+            text-align: center;
+            color: #808182;
+        }
+               
+        .dash{
+            color: white;
+        }
+}
+
+@media (max-width:1023px) {
+        body {
+            font-family: "Passion One", sans-serif;
+            font-size: 25px;
+         
+  
+            background: linear-gradient(145deg, #afcae5, #f7f7f7);
+            text-align: center;
+            position: absolute;
+            left: 50%;
+  transform: translateX(-50%);
+        }
+        .sidebar {
+           
+            background: #808182;
+            color: white;
+            width: 90vw;
+            padding: 10px;
+            opacity: 70%;
+            top:1vw;
+        }
+   
+        .sidebar ul {
+            list-style-type: none;
+            
             padding: 0;
         }
         .sidebar ul li {
@@ -68,15 +136,74 @@
     
         .card {
             background: white;
-            padding: 15px;
+            padding: 10px;
             margin: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
+            height:10vh;
+            font-size: 20px;
+           
         }
         
         .dash{
             color: white;
         }
+    }
+
+@media (max-width:700px){
+        body {
+            font-family: "Passion One", sans-serif;
+            font-size: 15px;
+  
+            background: linear-gradient(145deg, #afcae5, #f7f7f7);
+                 text-align: center;
+                position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+        }
+        .sidebar {
+           
+            background: #808182;
+            color: white;
+            width: 90vw;
+            padding: 10px;
+            opacity: 70%;
+            top:1vw;
+        }
+   
+        .sidebar ul {
+            list-style-type: none;
+            
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            background: #34495E;
+        }
+     
+        
+    
+        .card {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
+            height:10vh;
+            font-size: 13px;
+      
+           
+            
+         
+        }
+        
+        .dash{
+            color: white;
+        }
+    }
 </style>
+
 
 <script>
 import axios from 'axios';
