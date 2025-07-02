@@ -141,6 +141,7 @@
             height:10vh;
             font-size: 25px;
             text-align: center;
+            color: #808182;
            
         }
         
@@ -198,8 +199,7 @@
             height:10vh;
             font-size: 14px;
             width: 96%;
-      
-           
+            color: #808182;      
             
          
         }

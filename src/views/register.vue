@@ -63,6 +63,7 @@ export default {
             align-items: center;
             height: 100vh;
             margin: 0;
+            color: #808182;
         }
         .registration-container {
             background: linear-gradient(145deg, #afcae5, #f7f7f7);

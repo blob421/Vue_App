@@ -99,6 +99,7 @@ body {
             height: 100vh;
             width: 100vw;
             aspect-ratio: 7 / 4;
+            color: #808182;
 }
 .login-container {
             background: linear-gradient(145deg, #afcae5, #f7f7f7);

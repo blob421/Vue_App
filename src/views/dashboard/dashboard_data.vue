@@ -139,6 +139,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
             height:10vh;
             font-size: 27px;
+            color: #808182;
            
         }
         
@@ -191,10 +192,8 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
             height:10vh;
             font-size: 17px;
+            color: #808182;
       
-           
-            
-         
         }
         
         .dash{
