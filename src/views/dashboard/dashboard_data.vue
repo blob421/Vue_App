@@ -35,7 +35,36 @@
 
 
 <style>
-
+@media (min-width:1400px){
+    .body{
+      width: 100vw;
+      
+  
+      
+    }
+    .sidebar{
+       
+    width: 800px;
+  max-width: 100%;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+    }
+     .card{
+       
+   
+        width: 800px;
+  max-width: 90vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-51.5%);
+  text-align: center;
+  font-size: 30px;
+  top: 15vw;
+    }
+    
+}
 @media (min-width: 1024px){
   body {
   font-family: "Passion One", sans-serif;
