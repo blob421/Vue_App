@@ -1,18 +1,18 @@
 
 <template>
 <head>
-    
+ 
     <title>Dashboard</title>
+
 
 </head>
  <body>
     <div class="sidebar">
       <h2>Dashboard</h2>
         <ul>
-            <li>Home</li>
-            <li>Analytics</li>
-            <li>Reports</li>
-            <li>Settings</li>
+            <li><router-link to ="/dashboard/home" class="dash">Home</router-link></li>
+            <li><router-link to ="/dashboard/data" class="dash">User Data</router-link></li>
+          
         </ul>
     </div>
     <div class="content"></div>
@@ -26,6 +26,7 @@
             <p>User actions, logs, and updates can be displayed</p>
             </div>
 </body>
+  <RouterView />
 </template>  
 
 
@@ -76,11 +77,15 @@
             margin: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+               
+        .dash{
+            color: white;
+        }
 </style>
 
 <script>
 import axios from 'axios';
-
+import { RouterLink, RouterView } from 'vue-router'
 const api = import.meta.env.VITE_API_URL;
 
 export default {

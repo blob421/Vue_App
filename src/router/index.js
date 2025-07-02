@@ -10,9 +10,14 @@ const router = createRouter({
      prop: true
    },
 
-   { path: '/dashboard',
-     name: 'dashboard',
-     component: () => import('@/views/dashboard.vue'),
+   { path: '/dashboard/home',
+     name: 'dashboard_home',
+     component: () => import('@/views/dashboard/dashboard_home.vue'),
+     prop: true
+   },
+    { path: '/dashboard/data',
+     name: 'dashboard_data',
+     component: () => import('@/views/dashboard/dashboard_data.vue'),
      prop: true
    },
    { path: '/login/sign-in',
@@ -23,6 +28,11 @@ const router = createRouter({
    { path: '/login/register',
      name: 'register',
      component: () => import('@/views/register.vue'),
+     prop: true
+   },
+    { path: '/update_password',
+     name: 'update_password',
+     component: () => import('@/views/update/update_pass.vue'),
      prop: true
    },
   ],
