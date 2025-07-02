@@ -4,7 +4,7 @@
       <a href="/login/sign-in">Login</a> |
       <a href="/">Home</a> |
       <a href="/login/register">Register</a> |
-      <a href="/dashboard">Dashboard</a>
+      <a href="/dashboard/home">Dashboard</a>
 
  </head>
  
