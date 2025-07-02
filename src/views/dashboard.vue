@@ -95,7 +95,7 @@ export default {
 
 async loadData() {
   try {
-    const response = await axios.get(`${api}/api/users/${this.$route.params.id}`, {
+    const response = await axios.get(`${api}/api/users/`, {
     headers: {
         "Authorization": `Bearer ${localStorage.getItem("jwtToken")}`,   
     }

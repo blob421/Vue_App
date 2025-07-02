@@ -10,7 +10,7 @@ const router = createRouter({
      prop: true
    },
 
-   { path: '/dashboard/:id',
+   { path: '/dashboard',
      name: 'dashboard',
      component: () => import('@/views/dashboard.vue'),
      prop: true

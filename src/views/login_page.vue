@@ -41,7 +41,7 @@ export default {
        
         console.log(response);
         localStorage.setItem("jwtToken", response.data.access_token);
-        localStorage.setItem('user_id', response.data.user_id)
+      
         alert('Login successful!');
       } catch (error) {
         this.errorMessage = 'Invalid credentials. Please try again.';

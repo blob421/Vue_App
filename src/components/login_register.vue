@@ -4,7 +4,7 @@
       <a href="/login/sign-in">Login</a> |
       <a href="/">Home</a> |
       <a href="/login/register">Register</a> |
-      <a id="dashboardLink">Dashboard</a>
+      <a href="/dashboard">Dashboard</a>
 
  </head>
  
@@ -33,10 +33,5 @@
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const userId = localStorage.getItem("user_id");
-        if (userId) {
-            document.getElementById("dashboardLink").href = `/dashboard/${userId}`;
-        }
-    });
+
 </script>
