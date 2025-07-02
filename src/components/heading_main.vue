@@ -33,13 +33,6 @@
 }
 
 
-@media (max-width: 1023px) {
-  .graph {
-  font-size: 20px;
-  
-  }
-
-}
 @media (max-width: 414px) {
   .title-container {
   font-size: 20px;
@@ -47,7 +40,7 @@
   }
 
 }
-@media (max-height:500px){
+@media (max-height:480px){
   .title-container{
     font-size: 16px;
   }

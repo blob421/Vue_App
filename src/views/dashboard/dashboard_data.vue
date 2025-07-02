@@ -200,7 +200,7 @@
             color: white;
         }
     }
-      @media (max-height:414px){
+      @media (max-height:430px){
 
         .sidebar {
             width: 100%;
