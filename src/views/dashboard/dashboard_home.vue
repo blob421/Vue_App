@@ -77,6 +77,7 @@
             padding: 15px;
             text-align: center;
             font-size: 20px;
+          
         }
         .card {
             background: white;
@@ -128,7 +129,13 @@
             background: #34495E;
         }
      
-        
+        .header {
+            background: #9db0bd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
     
         .card {
             background: white;
@@ -137,6 +144,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
             height:10vh;
             font-size: 20px;
+            color: #808182;
            
         }
         
@@ -179,7 +187,13 @@
             background: #34495E;
         }
      
-        
+        .header {
+            background: #9db0bd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
     
         .card {
             background: white;
@@ -188,6 +202,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.188);
             height:10vh;
             font-size: 13px;
+            color: #808182;
       
            
             
