@@ -35,6 +35,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            background: linear-gradient(145deg, #afcae5, #f7f7f7);
         }
         .sidebar {
             width: 250px;

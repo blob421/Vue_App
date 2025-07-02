@@ -54,6 +54,14 @@ export default {
 
 </script>
 <style>
+p{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:49%;
+  color:#8e9193;
+
+}
 body {
             font-family: Arial,bold , sans-serif;
             background: linear-gradient(145deg, #afcae5, #f7f7f7);
