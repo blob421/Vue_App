@@ -137,9 +137,9 @@ const renderPlot = () => {
     opacity: 96%;
    
   }
-@media (min-width:2200px){
+@media (min-width:2000px){
   .container{
-    transform: translate(-50%, -30%) scale(2);
+    transform: translate(-50%, -80%) scale(2);
   }
   .graph{
     width: 80%;
