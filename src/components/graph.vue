@@ -123,7 +123,7 @@ const renderPlot = () => {
     min-width: 700px;
     max-width: 1100px;
     position: absolute;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -30%);
   
@@ -134,7 +134,7 @@ const renderPlot = () => {
     width:88%;
     margin-left: auto;
     margin-right: auto;
-    opacity: 96%;
+    opacity: 94%;
    
   }
 @media (min-width:2000px){
