@@ -33,16 +33,28 @@
 }
 
 
-@media (max-width: 414px) {
-  .title-container {
-  font-size: 20px;
-  
-  }
-
-}
-@media (max-height:480px){
+@media (min-width:1800px){
   .title-container{
-    font-size: 16px;
+    font-size: 65px;
+  }
+}
+
+@media (min-width:1500px){
+  .title-container{
+    font-size: 39px;
+  }
+}
+
+
+@media (max-width:1024px){
+  .title-container{
+    font-size: 25px;
+  }
+}
+
+@media (max-width:376px){
+  .title-container{
+    font-size: 17px;
   }
 }
 

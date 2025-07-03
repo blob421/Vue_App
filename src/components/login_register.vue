@@ -28,9 +28,19 @@
     display: inline;
 }
 
-@media (max-width:700px){
+@media (min-height:1500px){
+
      .login{
-          top:85%;
+          font-size: 39px;
+          top:80%;
+     }
+}
+
+@media (min-height:1150px){
+
+     .login{
+          font-size: 27px;
+          top:80%;
      }
 }
 

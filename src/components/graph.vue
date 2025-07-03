@@ -1,12 +1,12 @@
 <template>
+    <div class="container"> 
 
-    <div ref="plotlyChart" class="graph"></div>
-
+      <div ref="plotlyChart" class="graph"></div>
+    </div>
+   
 </template>
 
-
 <script setup>
-
 import Plotly from 'plotly.js-dist';
 import { ref, watch} from "vue";
 
@@ -25,6 +25,7 @@ const renderPlot = () => {
     return;
   }
       const trace = {
+
         x: dates,
         y: prices,
         mode: 'lines',
@@ -36,8 +37,10 @@ const renderPlot = () => {
       };
 
       const layout = { margin: {
+        
  
   r: 55, 
+  
  
 },
 
@@ -47,7 +50,7 @@ const renderPlot = () => {
     },
       template: "plotly_dark", // Dark theme
     paper_bgcolor: "#171717",  // Background outside the plot
-    plot_bgcolor: "#171717",   // Background inside the plot
+    plot_bgcolor: '#171717',   // Background inside the plot
     
     xaxis: {
        showline: false, // ✅ Removes the x-axis line
@@ -88,25 +91,8 @@ const renderPlot = () => {
     ticksuffix:"   "
   }
 };
-      const plotData = [
-  {
-    type: "barpolar",
-    marker: {
-      line: { color: "rgb(17,17,17)", width: 0.5 },
-      pattern: { fillmode: "overlay", size: 10, solidity: 0.2 }
-    }
-  },
-  {
-    type: "bar",
-    error_x: { color: "#f2f5fa" },
-    error_y: { color: "#f2f5fa" },
-    marker: {
-      line: { color: "rgb(17,17,17)", width: 0.5 },
-      pattern: { fillmode: "overlay", size: 10, solidity: 0.2 }
-    }
-  }
-];
-   const config = {responsive: true};
+    const config = {responsive: true};
+
      
       Plotly.newPlot(plotlyChart.value, [trace], layout, config);
 
@@ -115,30 +101,91 @@ const renderPlot = () => {
 </script>
 
 <style>
+* { box-sizing: border-box; }
 
-@media (min-width: 1024px) {
-  .graph {
-  top:10vw;
-       
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  box-sizing: border-box;
-  width: 80vw;
-   opacity: 0.93;
-  }  
+    body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
-@media (max-width: 1023px) {
-  .graph {
-   position: absolute;
-    top: 25%;
-     left: 0%;
+    body{
+        background: linear-gradient(145deg, #afcae5, #f7f7f7);
 
-   width: 100vw;
-   aspect-ratio: 14/11;
-    opacity: 0.92;
-   box-sizing: border-box;
-  }  
+    display: flex;
+    justify-content: center;
+    align-items: center; /* changed from center */
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    min-width: 700px;
+    max-width: 1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  
+    
+}   
+ .graph{
+
+    width:88%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 96%;
+   
+  }
+@media (min-width:2200px){
+  .container{
+    transform: translate(-50%, -30%) scale(2);
+  }
+  .graph{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1023px) {
+    .container{
+
+      transform: translate(-50%, -70%) scale(1);
+  
+  }
+    .graph{
+      width:95%
+    }
+
+
+}
+@media (max-width: 767px) {
+
+  .container{
+   
+   transform: translate(-50%, -65%) scale(0.6);
+}
+  .graph{
+    width:100%;
+  }
+}
+@media (max-width: 376px) {
+
+  .container{
+   
+   transform: translate(-50%, -70%) scale(0.5);
+}
+  .graph{
+    width:100%;
+  }
+}
+@media (max-width: 320px) {
+
+  .container{
+   
+   transform: translate(-50%, -50%) scale(0.49);
+}
+  .graph{
+    width:100%;
+  }
 }
 </style>

@@ -47,8 +47,15 @@
     width: 100%;
     height: 100vh;
   }
+  .sidebar ul li:hover {
+    background: #859fbf62;
+}
   
-
+  .dash{
+    color: white;
+    display: block;
+ 
+}
 
 @media (max-width: 1500px){
 
@@ -94,9 +101,6 @@
     padding: 10px;
     cursor: pointer;
 }
-.sidebar ul li:hover {
-    background: #859fbf62;
-}
 
 .header {
     background: #9db0bd;
@@ -121,9 +125,7 @@
     
 }
         
-.dash{
-    color: white;
-}
+
 
 @media (max-width:1024px){
     .container{

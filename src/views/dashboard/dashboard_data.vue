@@ -35,25 +35,35 @@
 
 
 <style>
+
 * { box-sizing: border-box; }
-         body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-         }
-  body{
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+    body{
         background: linear-gradient(145deg, #afcae5, #f7f7f7);
 
     display: flex;
-  justify-content: center;
-  align-items: center; /* changed from center */
- width: 100%;
-            height: 100vh;
-  }
+    justify-content: center;
+    align-items: center; /* changed from center */
+    width: 100%;
+    height: 100vh;
+}
   
-
+    .sidebar ul li:hover {
+    background: #859fbf62;
+}
+  
+  .dash{
+    color: white;
+    display: block;
+ 
+}
 
 @media (min-width: 1024px){
 
@@ -125,9 +135,7 @@
     
 }
         
-.dash{
-    color: white;
-}
+
 
 @media (max-width:1024px){
     .container{
