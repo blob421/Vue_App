@@ -17,13 +17,13 @@
   
 
 .title {
-  font-size: clamp(1rem, 2.5vw, 3rem);
+  font-size: clamp(1.1rem, 2.5vw, 3rem);
   background: linear-gradient(145deg, #cde5ed, #f0f6f8);
   color: #959696;
   white-space: nowrap;        
   overflow: hidden;            
   text-overflow: ellipsis;
-  padding: 0.6rem 1.4rem;
+  padding: 0.6rem 1.8rem;
   font-weight: 600;
   text-shadow: 1px 1px 1px white;
   backdrop-filter: blur(2px);
