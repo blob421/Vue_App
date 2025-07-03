@@ -149,7 +149,7 @@ const renderPlot = () => {
 @media (max-width: 1023px) {
     .container{
 
-      transform: translate(-50%, -70%) scale(1);
+      transform: translate(-50%, -30%) scale(1);
   
   }
     .graph{
@@ -162,7 +162,7 @@ const renderPlot = () => {
 
   .container{
    
-   transform: translate(-50%, -65%) scale(0.6);
+   transform: translate(-50%, -50%) scale(0.6);
 }
   .graph{
     width:100%;
@@ -172,7 +172,7 @@ const renderPlot = () => {
 
   .container{
    
-   transform: translate(-50%, -70%) scale(0.5);
+   transform: translate(-50%, -60%) scale(0.5);
 }
   .graph{
     width:100%;
@@ -186,6 +186,15 @@ const renderPlot = () => {
 }
   .graph{
     width:100%;
+  }
+}
+
+@media (max-height:540px){
+
+  .container{
+       transform: translate(-50%, -10%) 
+
+
   }
 }
 </style>
