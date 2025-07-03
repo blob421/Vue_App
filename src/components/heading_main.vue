@@ -45,6 +45,12 @@
     
 
   }
+@media (max-width:1024px){
+  .title{
+    padding: 1.2rem 1.8rem;
+  }
+}
+
 
 
 </style>

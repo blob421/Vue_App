@@ -26,6 +26,8 @@
     z-index: 1000;
     white-space: nowrap;
     display: inline;
+     background-color: rgba(255, 255, 255, 0.26);
+     padding: 0rem 1.4rem;
 }
 
 @media (min-height:1500px){
