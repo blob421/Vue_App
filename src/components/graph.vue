@@ -192,7 +192,7 @@ const renderPlot = () => {
 @media (max-height:540px){
 
   .container{
-       transform: translate(-50%, -10%) 
+       transform: translate(-50%, 5%) 
 
 
   }
