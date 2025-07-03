@@ -1,62 +1,51 @@
 
 <template>
+<div class="title_container">
+  <h1 class="title">Welcome to my web app</h1>
 
-<h1 class="title-container">Welcome to my web app</h1>
+</div>
+
   
+  
+   
 </template>
 
 
 <style>
 
-.title-container {
- position: absolute;
- font-family: "Titan One", sans-serif;;
-  top: 5%; 
-  left: 50%;
-  transform: translateX(-50%);
- display: inline-block;
-  padding: 0.6rem 1.4rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+
+  
+
+.title {
+  font-size: clamp(1rem, 2.5vw, 3rem);
   background: linear-gradient(145deg, #cde5ed, #f0f6f8);
   color: #959696;
-  border-radius: 12px;
-  border: 2px solid #ffffff;
-  box-shadow: 
-    inset 0 0 8px rgb(255, 255, 255), /* Inner frosty glow */
-    0 4px 12px rgb(255, 255, 255);       /* Outer cool shadow */
+  white-space: nowrap;        
+  overflow: hidden;            
+  text-overflow: ellipsis;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
   text-shadow: 1px 1px 1px white;
   backdrop-filter: blur(2px);
   transition: all 0.3s ease;
-  -webkit-backdrop-filter: blur(2px); /* ✅ Safari support */
-  backdrop-filter: blur(2px); 
+  border-radius: 12px;
+  border: 2px solid #ffffff;
+  box-shadow: 
+  inset 0 0 8px rgb(255, 255, 255), 
+  0 4px 12px rgb(255, 255, 255);       
+ 
 }
+  .title_container{
+    font-family: "Titan One", sans-serif;;
+    position: absolute;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+   
+    
 
-
-@media (min-width:1800px){
-  .title-container{
-    font-size: 65px;
   }
-}
 
-@media (min-width:1500px){
-  .title-container{
-    font-size: 39px;
-  }
-}
-
-
-@media (max-width:1024px){
-  .title-container{
-    font-size: 25px;
-  }
-}
-
-@media (max-width:376px){
-  .title-container{
-    font-size: 17px;
-  }
-}
 
 </style>
 
