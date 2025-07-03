@@ -20,7 +20,7 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Passion One", sans-serif;
     top:90%;
     z-index: 1000;
