@@ -17,17 +17,18 @@
 
 .login{
     
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    font-family: "Passion One", sans-serif;
-    top:90%;
-    z-index: 1000;
-    white-space: nowrap;
-    display: inline;
+     position: fixed;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: 20px;
+     font-family: "Passion One", sans-serif;
+     top:90%;
+     z-index: 1000;
+     white-space: nowrap;
+     display: inline;
      background-color: rgba(255, 255, 255, 0.26);
-     padding: 0rem 1.4rem;
+     padding: 0rem 3.3rem;
+     border-radius: 12px;
 }
 
 @media (min-height:1500px){
