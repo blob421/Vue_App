@@ -22,16 +22,20 @@
      transform: translateX(-50%);
      font-size: 20px;
      font-family: "Passion One", sans-serif;
-     top:92%;
+     top:90%;
      z-index: 1000;
      white-space: nowrap;
      display: inline;
       background: linear-gradient(360deg, #c6e1e9, #ffffff);
      opacity: 95%;
       
-    padding: 0rem 5.7vw;
+     padding: 0rem 5.7vw;
      border-radius: 12px;
+     box-shadow: 
+     inset 0 0 8px rgb(255, 255, 255), 
+     0 4px 12px rgb(255, 255, 255);   
 }
+
 
 @media (min-height:1500px){
 
