@@ -26,8 +26,10 @@
      z-index: 1000;
      white-space: nowrap;
      display: inline;
-     background-color: rgba(255, 255, 255, 0.26);
-     padding: 0rem 4.1rem;
+      background: linear-gradient(360deg, #c6e1e9, #ffffff);
+     opacity: 95%;
+      
+    padding: 0rem 5.7vw;
      border-radius: 12px;
 }
 
