@@ -22,12 +22,12 @@
      transform: translateX(-50%);
      font-size: 20px;
      font-family: "Passion One", sans-serif;
-     top:90%;
+     top:92%;
      z-index: 1000;
      white-space: nowrap;
      display: inline;
      background-color: rgba(255, 255, 255, 0.26);
-     padding: 0rem 3.3rem;
+     padding: 0rem 4.1rem;
      border-radius: 12px;
 }
 
