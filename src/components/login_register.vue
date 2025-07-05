@@ -29,7 +29,7 @@
       background: linear-gradient(360deg, #c6e1e9, #ffffff);
      opacity: 95%;
       
-     padding: 0rem 5.7vw;
+     padding: 0rem 3.7vw;
      border-radius: 12px;
      box-shadow: 
      inset 0 0 8px rgb(255, 255, 255), 
