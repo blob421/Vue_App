@@ -36,14 +36,8 @@ const renderPlot = () => {
   }
       };
 
-      const layout = { margin: {
+      const layout = { 
         
- 
-  r: 55, 
-  
- 
-},
-
     title: {
       text: "Bitcoin movement",  'x': 0.505, 
         'y':0.89, font : { size: 18, color: "#ffffff", family: "solidity: 0.2" }

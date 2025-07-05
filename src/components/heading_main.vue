@@ -17,8 +17,8 @@
   
 
 .title {
-  font-size: clamp(1.1rem, 2.5vw, 3rem);
-  background: linear-gradient(145deg, #cde5ed, #f0f6f8);
+  font-size: clamp(1.2rem, 2.5vw, 3rem);
+  background: linear-gradient(360deg, #c6e1e9, #ffffff);
   color: #959696;
   white-space: nowrap;        
   overflow: hidden;            
@@ -33,7 +33,7 @@
   box-shadow: 
   inset 0 0 8px rgb(255, 255, 255), 
   0 4px 12px rgb(255, 255, 255);       
- 
+  opacity: 95%;
 }
   .title_container{
     font-family: "Titan One", sans-serif;;
@@ -45,11 +45,6 @@
     
 
   }
-@media (max-width:1024px){
-  .title{
-    padding: 1.2rem 1.8rem;
-  }
-}
 
 
 
