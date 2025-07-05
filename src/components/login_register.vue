@@ -36,7 +36,15 @@
      0 4px 12px rgb(255, 255, 255);   
 }
 
+@media (max-width:800px){
+     .login{
+          padding: 0rem 6.7vw;
 
+
+     }
+}
+
+ 
 @media (min-height:1500px){
 
      .login{
