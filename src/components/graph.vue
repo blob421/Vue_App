@@ -37,7 +37,7 @@ const renderPlot = () => {
       };
 
       const layout = { margin:{
-        r:70
+        r:60
       },
         
     title: {
@@ -119,7 +119,7 @@ const renderPlot = () => {
     min-width: 700px;
     max-width: 1100px;
     position: absolute;
-    top: 51%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -30%);
   
@@ -130,7 +130,7 @@ const renderPlot = () => {
     width:88%;
     margin-left: auto;
     margin-right: auto;
-    opacity: 94%;
+    opacity: 92%;
    
   }
 @media (min-width:2000px){
