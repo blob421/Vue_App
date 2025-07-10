@@ -29,70 +29,91 @@ const renderPlot = () => {
         x: dates,
         y: prices,
         mode: 'lines',
-        type: 'scatter',
-        line: {
-        color: 'orange',  // Change line color here
-        width: 3        // Adjust thickness if needed
-  }
-      };
-
-      const layout = { margin:{
-        r:60
+        fill: "tonexty",
+        fillgradient: {
+        type: 'vertical',
+        colorscale: [[0,'rgba(255, 139, 37, 0.5)'], [1,'rgba(245, 187, 39, 1)']],
       },
+        showlegend: false,
+        line: {
+        color: "orange",  // Change line color here
+        width: 2.7,       // Adjust thickness if needed
+       
         
-    title: {
-      text: "Bitcoin movement",  'x': 0.505, 
-        'y':0.89, font : { size: 18, color: "#ffffff", family: "solidity: 0.2" }
-    },
-      template: "plotly_dark", // Dark theme
-    paper_bgcolor: "#171717",  // Background outside the plot
-    plot_bgcolor: '#171717',   // Background inside the plot
-    
-    xaxis: {
-       showline: false, // ✅ Removes the x-axis line
-       showgrid: false, // ✅ Removes the x-axis grid lines
-       zeroline: false, // ✅ Removes the baseline
-       title: {
-      text: "Date",
-      font: { size: 15, color: "#ffffff", family: "solidity: 0.2" }
-    },
-     tickangle: 0,
-     automargin: true, // ✅ Prevent labels from overlapping
-     tickmode: "auto",
-     dtick: 86400000 * 2,
-     tickformat: "%b %d",
-     linecolor: "#506784",
-     zerolinecolor: "#283442",
-     zerolinewidth: 2,
-     ticks: "",
-     color: "#171717", // ✅ Axis line color
-     tickfont: { size: 11, color: "#ffffff", family: "solidity: 0.2" }
+      }
+    };
+        const minY = Math.min(...prices);
+
+        const baseTrace = {
+          x: dates,
+          y: Array(prices.length).fill(minY),
+          type: "scatter",
+          mode: "lines",
+          line: { color: "transparent" },
+          showlegend: false,
+ 
+    };
+
+        const layout = { margin: {
+          r:70
+      },
+ 
+
+        title: {
+          text: "Bitcoin movement",  'x': 0.505, 
+          'y':0.89, font : { size: 18, color: "#ffffff", family: "solidity: 0.2" }
+      },
+        template: "plotly_dark", // Dark theme
+        paper_bgcolor: "#171717",  // Background outside the plot
+        plot_bgcolor: '#171717',   // Background inside the plot
+        
+        xaxis: {
+          showline: false, // ✅ Removes the x-axis line
+          showgrid: false, // ✅ Removes the x-axis grid lines
+          zeroline: false, // ✅ Removes the baseline
+          title: {
+          text: "Date",
+          font: { size: 15, color: "#ffffff", family: "solidity: 0.2" }
+        },
+
+        tickangle: 0,
+        automargin: true, // ✅ Prevent labels from overlapping
+        tickmode: "auto",
+        dtick: 86400000 * 2,
+        tickformat: "%b %d",
+        linecolor: "#506784",
+        zerolinecolor: "#283442",
+        zerolinewidth: 2,
+        ticks: "",
+        color: "#171717", // ✅ Axis line color
+        tickfont: { size: 11, color: "#ffffff", family: "solidity: 0.2" }
      
     
-  },
-  yaxis: {
-           title: {
-      text: "USD",
-      font: { size: 14, color: "#ffffff", family: "solidity: 0.2" },
-      standoff: 15
-    },
-    showline: false, // ✅ Removes the x-axis line
-    
-    zeroline: false, // ✅ Removes the baseline
-    linecolor: "#506784",
-    gridcolor: "#506784",
-    zerolinecolor: "#283442",
-    zerolinewidth: 2,
-    tickfont: { size: 11, color: "#ffffff", family: "solidity: 0.2" },
-    ticksuffix:"   "
+        },
+        yaxis: {
+          title: {
+            text: "USD",
+            font: { size: 14, color: "#ffffff", family: "solidity: 0.2" },
+            standoff: 15
+          },
+
+          showline: false, // ✅ Removes the x-axis line
+          zeroline: false, // ✅ Removes the baseline
+          linecolor: "#506784",
+          gridcolor: "#506784",
+          zerolinecolor: "#283442",
+          zerolinewidth: 2,
+          tickfont: { size: 11, color: "#ffffff", family: "solidity: 0.2" },
+          ticksuffix:"   "
+      }
+    };
+        const config = {responsive: true};
+
+     
+        Plotly.newPlot(plotlyChart.value, [baseTrace, trace], layout, config);
+
   }
-};
-    const config = {responsive: true};
-
-     
-      Plotly.newPlot(plotlyChart.value, [trace], layout, config);
-
-    }
+  
   
 </script>
 
