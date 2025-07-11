@@ -64,11 +64,28 @@
 </style>
 
 <script>
+import axios from 'axios';
+const api = import.meta.env.VITE_API_URL;
+
 export default {
-     computed : {
-          isAuthenticated() {
-               return !!localStorage.getItem("jwtToken");
-          }
-     }
-}
+  data() {
+    return {
+      isAuthenticated: false
+    };
+  },
+  async mounted() {
+    try {
+      
+      const res = await axios.get(`${api}/api/check-auth`, { 
+         headers: {
+        "Authorization": `Bearer ${localStorage.getItem("jwtToken")}`,   
+    }
+       });
+      
+      this.isAuthenticated = res.status === 200;
+    } catch {
+      this.isAuthenticated = false;
+    }
+  }
+};
 </script>
