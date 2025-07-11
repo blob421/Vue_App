@@ -40,9 +40,9 @@ export default {
           password: this.password.trim(),
           email: this.email.trim(),
         })
-        console.log(this.username, this.email,this.password)
-        console.log(response);
+      
         alert('Registration complete');
+        window.location.href = '/login/sign-in'
       } catch (error) {
         this.errorMessage = 'Invalid format';
        

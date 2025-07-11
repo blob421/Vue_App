@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
+import { loadData, isTokenReady } from '@/views/useAuth'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,9 +16,10 @@ const router = createRouter({
      name: 'dashboard_home',
      component: () => import('@/views/dashboard/dashboard_home.vue'),
      prop: true,
-     beforeEnter: (to, from, next) => {
-     const token = localStorage.getItem('jwtToken')
-     if (!isTokenValid(token)) {
+     async beforeEnter(to, from, next) {
+     await loadData()
+     if (!isTokenReady.value) {
+
         return next('/login/sign-in')
       }
       next()
@@ -52,16 +53,3 @@ const router = createRouter({
 })
 
 export default router
-
-function isTokenValid() {
-  const token = localStorage.getItem("jwtToken");
-  if (!token) return false;
-
-  try {
-    const payload = JSON.parse(atob(token.split('.')[1]));
-    const now = Math.floor(Date.now() / 1000);
-    return payload.exp && payload.exp > now;
-  } catch {
-    return false;
-  }
-}

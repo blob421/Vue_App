@@ -17,17 +17,15 @@ onMounted(async () => {
  
    try {
     const response = await axios.get(`${api}/api/bitcoin`);
-    console.log("Data received:", response.data);
-
     stats.value = response.data.content.sort((a, b) => new Date(a.date) - new Date(b.date));
-    console.log("content:", stats.value)
+  
 
     if (Array.isArray(stats.value)) {
     dates.value = stats.value.map(entry => new Date(entry.date));
     prices.value = stats.value.map(entry => entry.price);
   }
    
-    console.log("consts:", dates)
+    
   } catch (error) {
     console.error('API Error:', error);
   }
@@ -35,8 +33,7 @@ onMounted(async () => {
 });
 
 watch([dates, prices], ([newDates, newPrices]) => {
-  console.log("Updated Dates:", newDates);
-  console.log("Updated Prices:", newPrices);
+
 });
 </script>
 

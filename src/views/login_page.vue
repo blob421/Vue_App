@@ -39,9 +39,9 @@ export default {
           password: this.password
         })
        
-        console.log(response);
+        console.log(response.data.refresh_token);
         localStorage.setItem("jwtToken", response.data.access_token);
-      
+        localStorage.setItem("RefreshToken", response.data.refresh_token);
         alert('Login successful!');
         window.location.href = '/dashboard/home'
       } catch (error) {

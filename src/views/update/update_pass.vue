@@ -59,10 +59,10 @@ export default {
 
 );
        
-        console.log(response);
     
         
         alert('Password updated !');
+        window.location.href = '/dashboard/home'
       } catch (error) {
         this.errorMessage = "Your password is incorrect";
        

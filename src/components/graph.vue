@@ -14,8 +14,7 @@ const plotlyChart = ref(null);
 const { dates, prices } = defineProps(["dates", "prices"]);
 
 watch([() => dates, () => prices], ([newDates, newPrices]) => {
-  console.log("New Dates received in Graph.vue:", newDates);
-  console.log("New Prices received in Graph.vue:", newPrices);
+
   renderPlot();
 });
 

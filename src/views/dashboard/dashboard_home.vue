@@ -162,7 +162,7 @@
 
 <script>
 import axios from 'axios';
-
+import { loadData } from '@/views/useAuth'
 const api = import.meta.env.VITE_API_URL;
 
 export default {
@@ -170,34 +170,35 @@ export default {
         return{
             data: {},
         };
-
     },
+
+
+async mounted() {
+    await loadData() 
+    await this.fetchUser() 
+  },
 
     methods: {
 
-async loadData() {
-  try {
-    const response = await axios.get(`${api}/api/users/`, {
-    headers: {
-        "Authorization": `Bearer ${localStorage.getItem("jwtToken")}`,   
-    }
-    
+async fetchUser() {
 
-});
-    
-    console.log('API Response:', response.data); 
+  try {
+
+    const response = await axios.get(`${api}/api/users/`, {
+      headers: {
+        "Authorization": `Bearer ${localStorage.getItem("jwtToken")}`,
+      },
+    });
+
     this.data = response.data;
 
   } catch (error) {
     console.error('Error fetching data:', error);
-    }
-  }
+
+   }
+  },
  },
-
-
-    
-created() {
-    this.loadData(); // Call the function when the component is created
-  }
 }
+
+   
 </script>
