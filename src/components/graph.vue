@@ -138,7 +138,7 @@ const renderPlot = () => {
 }
 .container{
     min-width: 650px;
-    max-width: 900px;
+    max-width: 800px;
     position: absolute;
     top: 0%;
     left: 50%;
@@ -190,8 +190,10 @@ const renderPlot = () => {
 @media (max-width:4000px){
   .container{
     top: 0%;
-    transform: translateX(-50%) scale(1.5);
+    transform: translateX(-50%) scale(1.75);
     transform-origin: top;
+    padding-top: clamp(10rem, 20vh, 20rem);
+
     max-height: 100%;
   }
 }
@@ -204,18 +206,20 @@ const renderPlot = () => {
      padding-top: 8rem;
   }
   
+  
 }
+
 
 @media (max-width:767px){
   .container{
     transform: translateX(-50%) scale(0.55);
     transform-origin: top;
-     padding-top: clamp(10rem, 40vh, 20rem);
+     padding-top: clamp(10rem, 45vh, 20rem);
     
   }
   .h{
     font-size: 2.2rem;
-     width: 77%;
+     width: 82%;
   }
 }
 
