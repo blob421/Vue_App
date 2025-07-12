@@ -1,7 +1,7 @@
 <template>
     <div class="container">
        
-      <h class="h">Welcome to my web app</h>
+      <h class="h">Welcome to my web</h>
       <div ref="plotlyChart" class="graph"></div>
     </div>
    
@@ -214,8 +214,8 @@ const renderPlot = () => {
     
   }
   .h{
-    font-size: 2rem;
-     width: 80%;
+    font-size: 2.2rem;
+     width: 77%;
   }
 }
 
