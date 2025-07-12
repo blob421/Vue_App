@@ -37,7 +37,11 @@
 }
 
 
-
+@media (max-width:600px){
+  .login{
+     font-size: clamp(1.2rem, 2vw, 3rem);
+  }
+}
 </style>
 
 <script>
