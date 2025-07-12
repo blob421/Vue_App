@@ -1,5 +1,4 @@
-![Alt text](https://i.imgur.com/jE1kJ6u.png)
-![Alt text](https://i.imgur.com/xkyozny.png)
+![Alt text](https://i.imgur.com/6eRGA29.png)
 ![Alt text](https://i.imgur.com/Wr00o8s.png)
 ![Alt text](https://i.imgur.com/qvGZ6S0.png)
 
