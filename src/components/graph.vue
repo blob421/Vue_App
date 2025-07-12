@@ -1,6 +1,7 @@
 <template>
-    <div class="container"> 
-
+    <div class="container">
+       
+      <h class="h">Welcome to my web app</h>
       <div ref="plotlyChart" class="graph"></div>
     </div>
    
@@ -59,7 +60,7 @@ const renderPlot = () => {
  
 
         title: {
-          text: "Bitcoin movement",  'x': 0.505, 
+          text: "Bitcoin movement",  'x': 0.5, 
           'y':0.89, font : { size: 18, color: "#ffffff", family: "solidity: 0.2" }
       },
         template: "plotly_dark", // Dark theme
@@ -136,81 +137,88 @@ const renderPlot = () => {
     height: 100vh;
 }
 .container{
-    min-width: 700px;
-    max-width: 1100px;
+    min-width: 650px;
+    max-width: 900px;
     position: absolute;
-    top: 53%;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%, -30%);
-  
+    transform: translateX(-50%);
+    width:75%;
+    padding-top: 10rem;
+    /*border: 2px red solid;*/
+    max-height: 100vh;
+    
+   
+
     
 }   
+ .h{
+   font-family: "Titan One", sans-serif;;
+  font-size: 1.5rem;
+  background: linear-gradient(360deg, #c6e1e9, #ffffff);
+  color: #959696;
+  white-space: nowrap;        
+  overflow: hidden;            
+  text-overflow: ellipsis;
+  padding: 0.6rem 1.8rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px white;
+  backdrop-filter: blur(2px);
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  border: 2px solid #ffffff;
+  box-shadow: 
+  inset 0 0 8px rgb(255, 255, 255), 
+  0 4px 12px rgb(255, 255, 255);
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 60%;
+  text-align: center;
+  transform: translateX(-50%);
+  opacity: 95%;}
+  
+  
+  
  .graph{
-
-    width:88%;
+   
     margin-left: auto;
     margin-right: auto;
     opacity: 92%;
    
   }
-@media (min-width:2000px){
+@media (max-width:4000px){
   .container{
-    transform: translate(-50%, -80%) scale(2);
-  }
-  .graph{
-    width: 80%;
+    top: 0%;
+    transform: translateX(-50%) scale(1.5);
+    transform-origin: top;
+    max-height: 100%;
   }
 }
-
-@media (max-width: 1023px) {
-    .container{
-
-      transform: translate(-50%, -30%) scale(1);
+@media (max-width:1500px){
+  .container{
+    top: 0%;
+    transform: translateX(-50%) scale(1);
+    transform-origin: top;
+    max-height: 100%;
+     padding-top: 8rem;
+  }
   
-  }
-    .graph{
-      width:95%
-    }
-
-
 }
-@media (max-width: 767px) {
 
+@media (max-width:767px){
   .container{
-   
-   transform: translate(-50%, -50%) scale(0.6);
-}
-  .graph{
-    width:100%;
+    transform: translateX(-50%) scale(0.55);
+    transform-origin: top;
+     padding-top: clamp(10rem, 40vh, 20rem);
+    
   }
-}
-@media (max-width: 376px) {
-
-  .container{
-   
-   transform: translate(-50%, -60%) scale(0.5);
-}
-  .graph{
-    width:100%;
-  }
-}
-@media (max-width: 320px) {
-
-  .container{
-   
-   transform: translate(-50%, -50%) scale(0.49);
-}
-  .graph{
-    width:100%;
+  .h{
+    font-size: 2rem;
+     width: 80%;
   }
 }
 
-@media (max-height:400px){
-
-  .container{
-       transform: translate(-50%, 5%) 
 
 
-  }
-}
 </style>

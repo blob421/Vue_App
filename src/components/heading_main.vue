@@ -17,7 +17,7 @@
   
 
 .title {
-  font-size: clamp(1.2rem, 2.5vw, 3rem);
+  font-size: clamp(1rem, 2vw, 3rem);
   background: linear-gradient(360deg, #c6e1e9, #ffffff);
   color: #959696;
   white-space: nowrap;        

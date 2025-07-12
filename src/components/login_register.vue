@@ -20,9 +20,9 @@
      position: fixed;
      left: 50%;
      transform: translateX(-50%);
-     font-size: 20px;
+      font-size: clamp(1.3rem, 2vw, 3rem);
      font-family: "Passion One", sans-serif;
-     top:90%;
+     top:89%;
      z-index: 1000;
      white-space: nowrap;
      display: inline;
@@ -36,30 +36,7 @@
      0 4px 12px rgb(255, 255, 255);   
 }
 
-@media (max-width:800px){
-     .login{
-          padding: 0rem 6.7vw;
 
-
-     }
-}
-
- 
-@media (min-height:1500px){
-
-     .login{
-          font-size: 39px;
-          top:80%;
-     }
-}
-
-@media (min-height:1150px){
-
-     .login{
-          font-size: 27px;
-          top:80%;
-     }
-}
 
 </style>
 

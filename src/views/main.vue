@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Heading from '@/components/heading_main.vue'
+
 import graph from '@/components/graph.vue'
 
 import { ref, onMounted, watch } from "vue";
@@ -43,7 +43,6 @@ watch([dates, prices], ([newDates, newPrices]) => {
    
     </head>
 
-     <Heading />
       <graph :dates="dates" :prices="prices" class="graph"/>
        
 
