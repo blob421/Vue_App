@@ -60,6 +60,21 @@ const renderPlot = () => {
         const layout = { margin: {
           r:70
       },
+          annotations: [
+    {
+      text: "Date",
+      x: 0.492,
+      y: -0.19,         
+      xref: "paper",
+      yref: "paper",
+      showarrow: false,
+      font: {
+        size: 15,
+        color: "#ffffff",
+        family: "solidity: 0.2"
+      }
+    }
+  ],
  
 
         title: {
@@ -75,7 +90,7 @@ const renderPlot = () => {
           showgrid: false, // ✅ Removes the x-axis grid lines
           zeroline: false, // ✅ Removes the baseline
           title: {
-          text: "Date",
+          text: "",
           font: { size: 15, color: "#ffffff", family: "solidity: 0.2" }
         },
 
@@ -157,6 +172,21 @@ const renderPlot = () => {
         const layout2 = { margin: {
           r:70
       },
+          annotations: [
+    {
+      text: "Date",
+      x: 0.492,
+      y: -0.19,         
+      xref: "paper",
+      yref: "paper",
+      showarrow: false,
+      font: {
+        size: 15,
+        color: "#ffffff",
+        family: "solidity: 0.2"
+      }
+    }
+  ],
  
 
         title: {
@@ -172,7 +202,7 @@ const renderPlot = () => {
           showgrid: false, // ✅ Removes the x-axis grid lines
           zeroline: false, // ✅ Removes the baseline
           title: {
-          text: "Date",
+          text: "",
           font: { size: 15, color: "#ffffff", family: "solidity: 0.2" }
         },
 
