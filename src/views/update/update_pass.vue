@@ -1,6 +1,6 @@
 <template>
 <head>
-    <title>Login Page</title>
+    <title>Dashboard</title>
   
 </head>
 

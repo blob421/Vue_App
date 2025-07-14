@@ -2,7 +2,7 @@
 <template>
 <head>
 
-    <title>Login Page</title>
+    <title>Login</title>
  
 </head>
 

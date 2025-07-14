@@ -44,21 +44,19 @@ onMounted(async () => {
 watch([dates, prices, dates2, prices2], () => {
 });
 
-
 </script>
 
-<template>
-    <head>
-        <h1>Main</h1>
-   
-    </head>
 
+<template>
+   <head>
+    <title>Home</title>
+   </head>
+    
     <graph :dates="dates" :prices="prices" :dates2="dates2" :prices2="prices2"/>
     
     <RouterView />
 
 </template>
-
 
 
 <style>

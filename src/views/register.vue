@@ -2,7 +2,7 @@
 <template>
   <head>
   
-    <title>Registration Page</title>
+    <title>Register</title>
  </head>
     <div class="registration-container">
         <h2>Register</h2>
