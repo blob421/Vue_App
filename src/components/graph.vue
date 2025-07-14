@@ -381,7 +381,8 @@ const renderPlot = () => {
     transform-origin: top;
   }
     .h{
-    font-size: 2.5rem;
+    
+    padding: 1rem 1.5rem;
     
   }
 }
