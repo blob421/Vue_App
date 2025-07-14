@@ -350,6 +350,10 @@ const renderPlot = () => {
      transform: translateX(-50%) scale(0.45);
     transform-origin: top;
   }
+    .h{
+    font-size: 2.5rem;
+    
+  }
 }
 
 </style>
