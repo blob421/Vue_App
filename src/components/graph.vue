@@ -63,7 +63,7 @@ const renderPlot = () => {
           annotations: [
     {
       text: "Date",
-      x: 0.492,
+      x: 0.491,
       y: -0.19,         
       xref: "paper",
       yref: "paper",
@@ -175,7 +175,7 @@ const renderPlot = () => {
           annotations: [
     {
       text: "Date",
-      x: 0.492,
+      x: 0.491,
       y: -0.19,         
       xref: "paper",
       yref: "paper",
