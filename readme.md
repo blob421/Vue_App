@@ -10,18 +10,19 @@ https://gentle-pond-0eb439910.2.azurestaticapps.net
 
 Introduction :
 -------------
-This repository contains the front-end of my web app. It is currently deployed on Azure and interacts with my backend and a Postgres SQL 
-database on the cloud. Data is fetched using a containerized version of my Fetch script running on Azure. It features a plotly graph updated in real time. 
+This is the front-end of my web app. Currently deployed on Azure as a static web app, it uses flask as back-end for server side operations and a Postgres SQL database for storage on the cloud. Data is fetched using a containerized version of my Fetch script running on Azure. It features two plotly graphs updated in real time, a personnalized dashboard, login/register pages as well as a way to change passwords.
 
 Features :
 ------------------
-Hashed passwords :heavy_check_mark:
-Real time updates :heavy_check_mark:
-Personnalized dashboard :heavy_check_mark:
 Fully compatible with mobiles :heavy_check_mark:
+Hashed passwords :heavy_check_mark:
+Personnalized dashboard :heavy_check_mark:
+Authentication system with token refresh :heavy_check_mark:
+Redirections :heavy_check_mark:
+Real time updates :heavy_check_mark:
 Cool UI :heavy_check_mark: 
 
-What's next to come :
+What's next ? :
 ----------------------
  - An LSTM prediction model for Bitcoin and maybe Ethereum 
  - An integration of this model to the current plotly graph 
